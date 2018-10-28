@@ -1,0 +1,167 @@
+body {
+	background-color: #f8f8f8;
+}
+
+.menu {
+	list-style-type: none;
+}
+
+.center {
+	text-align: center;
+}
+
+.menu a {
+	text-decoration: none;
+	font-size: 18px;
+}
+
+/*если уже проходил по ссылке, а цвет хочешь поменять,
+то сделай это так*/
+a:visited {
+	color: black;
+}
+
+.catalog1 {
+	color: #000;
+	font-size: 18px;
+	font-weight: 400;
+	background-color: #eaeaea;
+}
+
+a:visited {
+	color: black;
+}
+
+.short_description {
+	color: #707070;
+	font-size: 14px;
+	font-style: italic;
+	line-height: 16px;
+}
+
+.detailliert_description {
+	color: #484343;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: left;
+}	
+
+.list {
+	color: #700000;
+	font-size: 17px;
+	font-style: bold;
+	line-height: 20px;
+}
+
+.l1 {
+	list-style: none;
+	list-style-image: url(img/1.png);
+}
+
+.l2 {
+	list-style: none;
+	list-style-image: url(img/2.png);
+}
+
+.l3 {
+	list-style: none;
+	list-style-image: url(img/3.png);
+}
+
+.l4 {
+	list-style: none;
+	list-style-image: url(img/4.png);
+}
+
+.l5 {
+	list-style: none;
+	list-style-image: url(img/5.png);
+}
+
+.l6 {
+	list-style: none;
+	list-style-image: url(img/6.png);
+}
+
+.l7 {
+	list-style: none;
+	list-style-image: url(img/7.png);
+}
+
+.l8 {
+	list-style: none;
+	list-style-image: url(img/8.png);
+}
+
+.l9 {
+	list-style: none;
+	list-style-image: url(img/9.png);
+}
+
+.l10 {
+	list-style: none;
+	list-style-image: url(img/10.png);
+}
+
+.l11 {
+	list-style: none;
+	list-style-image: url(img/11.png);
+}
+
+.l12 {
+	list-style: none;
+	list-style-image: url(img/12.png);
+}
+
+.l13 {
+	list-style: none;
+	list-style-image: url(img/13.png);
+}
+
+.l14 {
+	list-style: none;
+	list-style-image: url(img/14.png);
+}
+
+.l15 {
+	list-style: none;
+	list-style-image: url(img/15.png);
+}
+
+.l16 {
+	list-style: none;
+	list-style-image: url(img/16.png);
+}
+
+input[type=text]{
+   width:200px;
+   height: 20px;
+   	color: #000;
+	font-size: 14px;
+	font-weight: 400;
+	background-color: #eaeaea;
+}
+
+textarea,
+select{
+	color: #000;
+	font-size: 14px;
+	font-weight: 400;
+	background-color: #eaeaea;
+}
+
+#first {
+	width: 240px; 
+	outline: #eaeaea solid 3px;
+}
+
+#second {
+	width: 240px; 
+	outline: #617258 solid 3px;
+}
+
+#third {
+	width: 240px; 
+	outline: #F48E20 solid 3px;
+}
