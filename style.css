@@ -218,7 +218,7 @@ input[type=E-mail]{
 	text-transform: capitalize;
 }
 
-input[type=E-mail]:hover{
+input[type=E-mail]:focus{
    width:200px;
    height: 20px;
    	color: #700000;
