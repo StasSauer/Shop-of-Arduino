@@ -2,23 +2,28 @@ body {
 	background-color: #f8f8f8;
 }
 
-.menu {
+.header {
 	list-style-type: none;
+	text-align: center;
+	margin: 20px;
 }
 
 .center {
 	text-align: center;
 }
 
-.menu li a {
+.header a {
 	text-decoration: none;
 	font-size: 18px;
+	color: black;
+	height: 40px;
+ 	margin-right: 30px;
 }
 
-/*если уже проходил по ссылке, а цвет хочешь поменять,
+/*если наводишь на текст, а цвет хочешь поменять,
 то сделай это так*/
-a:visited {
-	color: black;
+.header a:hover {
+	color: gray;
 }
 
 .catalog1 {
@@ -28,9 +33,6 @@ a:visited {
 	background-color: #eaeaea;
 }
 
-a:visited {
-	color: black;
-}
 
 .short_description {
 	color: #707070;
