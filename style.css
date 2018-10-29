@@ -3,9 +3,9 @@ body {
 }
 
 .header {
-	list-style-type: none;
 	text-align: center;
-	margin: 20px;
+	margin: 10px;
+	
 }
 
 .center {
@@ -16,8 +16,52 @@ body {
 	text-decoration: none;
 	font-size: 18px;
 	color: black;
-	height: 40px;
  	margin-right: 30px;
+}
+
+/*стиль для левого светодиода*/
+
+.left { 
+    position:relative; 
+    margin:0 auto; 
+    display: block;
+    width: 400px;
+}
+
+  .left img { 
+    left: 0; 
+    position:absolute; 
+    top: 0; 
+}
+
+  .left img.raz {opacity:0;filter:alpha(opacity=0);}
+  .left:hover img.raz {opacity:1;filter:alpha(opacity=100);}
+  .left:hover img.dva, .left img.dva:hover {opacity:0;filter:alpha(opacity=0);}
+
+/*стиль для правого светодиода*/
+
+.right { 
+    position:relative; 
+    margin: 30 auto; 
+    display: block;
+    width: 400px;
+}
+
+.right img { 
+    right: 0; 
+    position:absolute; 
+    top: 0; 
+}
+
+  .right img.raz {opacity:0;filter:alpha(opacity=0);}
+  .right:hover img.raz {opacity:1;filter:alpha(opacity=100);}
+  .right:hover img.dva, .right img.dva:hover {opacity:0;filter:alpha(opacity=0);}
+
+
+/*работа с шапкой таблицы*/
+.topics { 
+	height: 30px;
+	background-color: #eaeaea;
 }
 
 /*если наводишь на текст, а цвет хочешь поменять,
@@ -25,6 +69,13 @@ body {
 .header a:hover {
 	color: gray;
 }
+
+.content img{
+	width: 20%;
+	display:block;
+	margin:auto;
+}
+
 
 .catalog1 {
 	color: #000;
@@ -54,6 +105,17 @@ body {
 	font-size: 17px;
 	font-style: bold;
 	line-height: 20px;
+}
+
+h1,
+h3 {
+	text-align: center;
+}
+
+p:first-letter {
+	font-size: 25px;
+	color: brown;
+	font-family: Pompadur, 'Comic Sans MS', cursive;
 }
 
 .l1 {
@@ -143,6 +205,27 @@ input[type=text]{
 	font-size: 14px;
 	font-weight: 400;
 	background-color: #eaeaea;
+	text-transform: capitalize;
+}
+
+input[type=E-mail]{
+   width:200px;
+   height: 20px;
+   	color: #000;
+	font-size: 14px;
+	font-weight: 400;
+	background-color: #eaeaea;
+	text-transform: capitalize;
+}
+
+input[type=E-mail]:hover{
+   width:200px;
+   height: 20px;
+   	color: #700000;
+	font-size: 14px;
+	font-weight: 400;
+	background-color: #cfc;
+	text-transform: capitalize;
 }
 
 textarea,
@@ -151,19 +234,54 @@ select{
 	font-size: 14px;
 	font-weight: 400;
 	background-color: #eaeaea;
+	text-transform: capitalize;
 }
 
-#first {
+#first img {
 	width: 240px; 
 	outline: #eaeaea solid 3px;
 }
 
-#second {
+#first img:hover {
+	outline: none;
+}
+
+#second img {
 	width: 240px; 
 	outline: #617258 solid 3px;
 }
 
-#third {
+#second img:hover {
+	outline: none;
+}
+
+#third img {
 	width: 240px; 
 	outline: #F48E20 solid 3px;
+}
+
+#third img:hover {
+	outline: none;
+}
+
+.table {
+	border: 1px solid #000;
+	width: 500px;
+	height: 200px;
+	border-spacing: 10px;
+	border-collapse: collapse;
+	margin: auto;
+}
+
+.table td {
+	border: 1px solid darkgreen;
+	padding-left: 10px;
+	padding-top: 10px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.footer {
+	text-align: center;
+	color: gray;
 }
