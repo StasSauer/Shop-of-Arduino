@@ -2,66 +2,37 @@ body {
 	background-color: #f8f8f8;
 }
 
+.container{
+	width: 600px;
+	margin: 0 auto;
+}
+
 .header {
-	text-align: center;
-	margin: 10px;
-	
+	height: 100px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.logo img{
+	margin-left: 30px;
+	margin-top: 15px;
+	width: 150px;
+	float: left;
+}
+
+
+.product_2 a{
+	text-decoration: none;
+	font-size: 20px;
+	color: black;
+	float: right;
+	margin-right: 20px;
+	margin-top: 30px;
 }
 
 .center {
 	text-align: center;
-}
-
-.header a {
-	text-decoration: none;
-	font-size: 18px;
-	color: black;
- 	margin-right: 30px;
-}
-
-/*стиль для левого светодиода*/
-
-.left { 
-    position:relative; 
-    margin:0 auto; 
-    display: block;
-    width: 400px;
-}
-
-  .left img { 
-    left: 0; 
-    position:absolute; 
-    top: 0; 
-}
-
-  .left img.raz {opacity:0;filter:alpha(opacity=0);}
-  .left:hover img.raz {opacity:1;filter:alpha(opacity=100);}
-  .left:hover img.dva, .left img.dva:hover {opacity:0;filter:alpha(opacity=0);}
-
-/*стиль для правого светодиода*/
-
-.right { 
-    position:relative; 
-    margin: 30 auto; 
-    display: block;
-    width: 400px;
-}
-
-.right img { 
-    right: 0; 
-    position:absolute; 
-    top: 0; 
-}
-
-  .right img.raz {opacity:0;filter:alpha(opacity=0);}
-  .right:hover img.raz {opacity:1;filter:alpha(opacity=100);}
-  .right:hover img.dva, .right img.dva:hover {opacity:0;filter:alpha(opacity=0);}
-
-
-/*работа с шапкой таблицы*/
-.topics { 
-	height: 30px;
-	background-color: #eaeaea;
 }
 
 /*если наводишь на текст, а цвет хочешь поменять,
@@ -70,12 +41,17 @@ body {
 	color: gray;
 }
 
-.content img{
-	width: 20%;
+.images_index img{
+	width: 300px;
 	display:block;
 	margin:auto;
 }
 
+.images_catalog a img{
+	width: 220px;
+	display:block;
+	margin:auto;
+}
 
 .catalog1 {
 	color: #000;
@@ -83,7 +59,6 @@ body {
 	font-weight: 400;
 	background-color: #eaeaea;
 }
-
 
 .short_description {
 	color: #707070;
@@ -118,86 +93,6 @@ p:first-letter {
 	font-family: Pompadur, 'Comic Sans MS', cursive;
 }
 
-.l1 {
-	list-style: none;
-	list-style-image: url(img/1.png);
-}
-
-.l2 {
-	list-style: none;
-	list-style-image: url(img/2.png);
-}
-
-.l3 {
-	list-style: none;
-	list-style-image: url(img/3.png);
-}
-
-.l4 {
-	list-style: none;
-	list-style-image: url(img/4.png);
-}
-
-.l5 {
-	list-style: none;
-	list-style-image: url(img/5.png);
-}
-
-.l6 {
-	list-style: none;
-	list-style-image: url(img/6.png);
-}
-
-.l7 {
-	list-style: none;
-	list-style-image: url(img/7.png);
-}
-
-.l8 {
-	list-style: none;
-	list-style-image: url(img/8.png);
-}
-
-.l9 {
-	list-style: none;
-	list-style-image: url(img/9.png);
-}
-
-.l10 {
-	list-style: none;
-	list-style-image: url(img/10.png);
-}
-
-.l11 {
-	list-style: none;
-	list-style-image: url(img/11.png);
-}
-
-.l12 {
-	list-style: none;
-	list-style-image: url(img/12.png);
-}
-
-.l13 {
-	list-style: none;
-	list-style-image: url(img/13.png);
-}
-
-.l14 {
-	list-style: none;
-	list-style-image: url(img/14.png);
-}
-
-.l15 {
-	list-style: none;
-	list-style-image: url(img/15.png);
-}
-
-.l16 {
-	list-style: none;
-	list-style-image: url(img/16.png);
-}
-
 input[type=text]{
    width:200px;
    height: 20px;
@@ -209,7 +104,7 @@ input[type=text]{
 }
 
 input[type=E-mail]{
-   width:200px;
+   width: 200px;
    height: 20px;
    	color: #000;
 	font-size: 14px;
@@ -282,6 +177,13 @@ select{
 }
 
 .footer {
-	text-align: center;
-	color: gray;
+	background-color: #009999;
+	height: 200px;
+}
+
+.copy {
+	margin-top: 20px;
+	margin-right: 40px;
+	float: right;
+	color: darkgray;
 }
