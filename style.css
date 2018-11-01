@@ -7,8 +7,13 @@ body {
 	margin: 0 auto;
 }
 
+.product{
+	font-weight: bold;
+}
+
 .header {
 	height: 100px;
+	background-image: url(img/11.png);
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
@@ -22,7 +27,7 @@ body {
 }
 
 
-.product_2 a{
+.product a{
 	text-decoration: none;
 	font-size: 20px;
 	color: black;
@@ -39,6 +44,63 @@ body {
 то сделай это так*/
 .header a:hover {
 	color: gray;
+}
+
+.all_catalog {
+	width: 600px;
+	margin: 0 auto;
+}
+
+.tovar1{
+	height: 170px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.images_catalog1 img{
+	margin-left: 30px;
+	margin-top: 15px;
+	width: 150px;
+	float: left;
+}
+
+.short_description {
+	color: #707070;
+	font-size: 14px;
+	font-style: italic;
+	line-height: 16px;
+	text-align: justify;
+	margin-top: 30px;
+	margin-left: 200px;
+}
+
+.sell{
+	text-align: right;
+}
+
+a.button10 {
+  display: inline-block;
+  color: black;
+  font-size: 100%;
+  font-weight: 700;
+  text-decoration: none;
+  user-select: none;
+  padding: .25em .5em;
+  outline: none;
+  border: 1px solid rgb(200,200,200);
+  border-radius: 7px;
+  background: rgb(200,212,200) linear-gradient(rgb(200,212,200), rgb(200,200,200));
+  box-shadow: inset 0 -2px 1px rgba(0,0,0,0), inset 0 1px 2px rgba(0,0,0,0), inset 0 0 0 60px rgba(200,200,200,0);
+  transition: box-shadow .2s, border-color .2s;
+} 
+a.button10:hover {
+  box-shadow: inset 0 -1px 1px rgba(0,0,0,0), inset 0 1px 2px rgba(0,0,0,0), inset 0 0 0 60px rgba(230,230,230,.5);
+}
+a.button10:active {
+  padding: calc(.25em + 1px) .5em calc(.25em - 1px);
+  border-color: rgba(230,230,230,1);
+  box-shadow: inset 0 -1px 1px rgba(0,0,0,.1), inset 0 1px 2px rgba(0,0,0,.3), inset 0 0 0 60px rgba(230,230,230,.45);
 }
 
 .images_index img{
@@ -60,12 +122,7 @@ body {
 	background-color: #eaeaea;
 }
 
-.short_description {
-	color: #707070;
-	font-size: 14px;
-	font-style: italic;
-	line-height: 16px;
-}
+
 
 .detailliert_description {
 	color: #484343;
@@ -73,6 +130,7 @@ body {
 	font-weight: 400;
 	line-height: 24px;
 	text-align: left;
+	text-align: justify;
 }	
 
 .list {
@@ -93,47 +151,173 @@ p:first-letter {
 	font-family: Pompadur, 'Comic Sans MS', cursive;
 }
 
-input[type=text]{
-   width:200px;
-   height: 20px;
-   	color: #000;
-	font-size: 14px;
-	font-weight: 400;
-	background-color: #eaeaea;
-	text-transform: capitalize;
+form {
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 30px 30px 6px 30px;
+    min-width: 320px;
+    max-width: 520px;
+    width: 100%;
+    border: 1px solid rgba(120,120,120,.7);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background: rgba(60, 63, 65, 0.9); 
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+    -webkit-box-shadow: 0 0 13px 3px rgba(0,0,0,.5);
+    -moz-box-shadow: 0 0 13px 3px rgba(0,0,0,.5);
+    box-shadow: 0 0 13px 3px rgba(0,0,0,.5);
+}
+/* общие стили для полей ввода */
+textarea, input{
+    display:block;    
+    margin-bottom:20px;
+    padding-right:20px;
+    padding-left:20px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box; 
+    color:#fff;
+    font-weight: 300;
+    font-size:18px;
+    font-family: 'Open Sans', sans-serif;
+}
+/* поле текстового сообщения */
+textarea{
+    overflow:hidden;
+    width: 93%;
+    height: 110px;
+    border: 1px solid rgba(255,255,255,.6);
+    background: rgba(255, 255, 255, 0.4); 
+}
+/* формируем поля ввода */
+input {
+    width: 92%;
+    height: 48px;
+    border: 1px solid rgba(255,255,255,.4);
+}
+input[type=submit] {
+    cursor:pointer;
+}
+input.name {
+    background: rgba(255, 255, 255, 0.4); 
+    padding-left:25px;
+}
+input.email {
+    background: rgba(255, 255, 255, 0.4);
+    padding-left:25px;
+}
+input.message {
+    background: rgba(255, 255, 255, 0.4);
+    padding-left: 25px;
+}
+::-webkit-input-placeholder {
+    color: #fff;
+}
+:-moz-placeholder{ 
+    color: #fff; 
+}
+::-moz-placeholder {
+    color: #fff;
+}
+:-ms-input-placeholder {  
+    color: #fff; 
+}
+/* поля ввода при фокусе */
+input:focus, textarea:focus { 
+    background-color: rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 0 5px 1px rgba(255,255,255,.5);
+    -webkit-box-shadow: 0 0 5px 1px rgba(255,255,255,.5);
+    box-shadow: 0 0 5px 1px rgba(255,255,255,.5);
+    overflow: hidden; 
+}
+/* скрываем текст полей ввода при фокусе */
+:focus::-webkit-input-placeholder { color:transparent; }
+:focus::-moz-placeholder { color:transparent; }
+:focus::placeholder { color:transparent; }
+ 
+/* Стили для кнопки отправить */
+.btn {
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    border: 1px solid #253737;
+    background: #416b68;
+    background: -webkit-gradient(linear, left top, left bottom, from(#230), to(#416b68));
+    background: -webkit-linear-gradient(top, #416b68, #416b68);
+    background: -moz-linear-gradient(top, #416b68, #416b68);
+    background: -ms-linear-gradient(top, #416b68, #416b68);
+    background: -o-linear-gradient(top, #416b68, #416b68);
+    background-image: -ms-linear-gradient(top, #6da5a3 0%, #416b68 100%);
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: rgba(255, 255, 255, 0.1) 0 1px 0, inset rgba(255,255,255,0.7) 0 1px 0;
+    -moz-box-shadow: rgba(255,255,255,0.1) 0 1px 0, inset rgba(255,255,255,0.7) 0 1px 0;
+    box-shadow: rgba(255,255,255,0.1) 0 1px 0, inset rgba(255,255,255,0.7) 0 1px 0;
+    color: #e1e1e1;
+    outline: none;
+    margin-left: 20px;
+}
+.btn:hover {
+    border: 1px solid #253737;
+    background: #416b68;
+    background: -webkit-gradient(linear, left top, left bottom, from(#77b2b0), to(#416b68));
+    background: -webkit-linear-gradient(top, #77b2b0, #416b68);
+    background: -moz-linear-gradient(top, #77b2b0, #416b68);
+    background: -ms-linear-gradient(top, #77b2b0, #416b68);
+    background: -o-linear-gradient(top, #77b2b0, #416b68);
+    background-image: -ms-linear-gradient(top, #77b2b0 0%, #416b68 100%);
+    color: #fff;
+ }
+
+.btn:active {
+    margin-top:1px;
+    border: 1px solid #333333;
+    background: #ffCC00;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffCC00), to(#ff6600));
+    background: -webkit-linear-gradient(top, #ffcc00, #ff6600);
+    background: -moz-linear-gradient(top, #ffcc00, #ff6600);
+    background: -ms-linear-gradient(top, #ffcc00, #ff6600);
+    background: -o-linear-gradient(top, #ffcc00, #ff6600);
+    background-image: -ms-linear-gradient(top, #ffcc00 0%, #ff6600 100%);
+    -webkit-box-shadow: rgba(255,255,255,0) 0 1px 0, inset rgba(255,255,255,0.7) 0 1px 0;
+    -moz-box-shadow: rgba(255,255,255,0) 0 1px 0, inset rgba(255,255,255,0.7) 0 1px 0;
+    box-shadow: rgba(255,255,255,0) 0 1px 0, inset rgba(255,255,255,0.7) 0 1px 0;
+    color: #fff;
 }
 
-input[type=E-mail]{
-   width: 200px;
-   height: 20px;
-   	color: #000;
-	font-size: 14px;
-	font-weight: 400;
-	background-color: #eaeaea;
-	text-transform: capitalize;
+.contact{
+	text-align: center;
+	font-size: 24px;
 }
 
-input[type=E-mail]:focus{
-   width:200px;
-   height: 20px;
-   	color: #700000;
-	font-size: 14px;
-	font-weight: 400;
-	background-color: #cfc;
-	text-transform: capitalize;
+iframe{
+	width: 100%;
+	height: 374px;
 }
 
-textarea,
-select{
-	color: #000;
+.images_catalog2 a img{
+	float: left;
+}
+
+.short_description2 {
+	color: #707070;
 	font-size: 14px;
-	font-weight: 400;
-	background-color: #eaeaea;
-	text-transform: capitalize;
+	font-style: italic;
+	line-height: 16px;
+	text-align: justify;
+	margin-top: 10px;
+	margin-left: 240px;	
 }
 
 #first img {
-	width: 240px; 
+	width: 220px; 
 	outline: #eaeaea solid 3px;
 }
 
@@ -142,8 +326,8 @@ select{
 }
 
 #second img {
-	width: 240px; 
-	outline: #617258 solid 3px;
+	width: 220px; 
+	outline: #eaeaea solid 3px;
 }
 
 #second img:hover {
@@ -151,8 +335,8 @@ select{
 }
 
 #third img {
-	width: 240px; 
-	outline: #F48E20 solid 3px;
+	width: 220px; 
+	outline: #eaeaea solid 3px;
 }
 
 #third img:hover {
