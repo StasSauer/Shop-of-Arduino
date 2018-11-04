@@ -1,44 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,700');
+
 body {
-	background-color: #f8f8f8;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+* {
+	margin: 0;
+	padding: 0;
 }
 
 .container{
-	width: 600px;
+	width: 1280px;
 	margin: 0 auto;
 }
 
-.product{
-	font-weight: bold;
-}
-
 .header {
-	height: 100px;
-	background-image: url(img/17.png);
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+	height: 768px;
+	background-image: url(img/bg.png);
 }
 
-.logo img{
-	margin-left: 30px;
-	margin-top: 15px;
-	width: 150px;
-	float: left;
+.header .logo {
+	margin-left: 130px;
+	margin-top: 60px;
 }
 
-
-.product a{
-	text-decoration: none;
-	font-size: 20px;
-	color: black;
+.menu{
 	float: right;
-	margin-right: 20px;
-	margin-top: 30px;
+	margin-right: 150px;
+	margin-top: 120px;
 }
 
-.center {
+.menu li {
+	float: left;
+	list-style-type: none;
+}
+
+.menu li a {
+	color: #fff;
+	font-size: 25px;
+	font-weight: 300;
+	line-height: 48px;
+	text-decoration: none;
+	display: block;
+	padding: 0 20px;
+}
+
+.menu li a:hover {
+	color: #A2BCD1;
+	border-bottom: 1px solid black;
+}
+
+.content {
+	width: 700px;
+	margin-left: 290px;
+	margin-top: 20px;
 	text-align: center;
 }
+
+.content h1 {
+	color: #fff;
+	font-size: 62px;
+	font-weight: 100;
+	line-height: 72px;
+	margin-bottom: 34px;
+}
+
+.content p {
+	color: #fff;
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 24px;
+	margin-bottom: 32px;
+}
+
+.content a {
+	display: inline-block;
+	background: #fff;
+	box-shadow: 0px 2px 4.85px 0.15px rgba(33, 33, 33, 0.35);
+	width: 212px;
+	height: 45px;
+	text-decoration: none;
+	border-radius: 22px;
+	line-height: 45px;
+	color: #4D7A81;
+	font-size: 20px;
+	font-weight: 700;	
+}
+
+.content a:hover{
+	background: #fff url('img/18.png') no-repeat 32px 14px;
+	color: lightgray;
+}
+
+.content_2 {
+	float: left;
+	margin-left: 40px;
+}
+
+.content_2 li {
+	float: left;
+	list-style-type: none;
+	text-align: center;
+}
+
+.content_2 li a {
+	color: #000;
+	font-size: 25px;
+	font-weight: 300;
+	line-height: 48px;
+	text-decoration: none;
+	display: block;
+	padding: 0 20px;
+}
+
+.content_2 li a img {
+	margin-top: 30px; 
+	padding: 0 64px;
+	height: 150px;
+}
+
+
 
 /*если наводишь на текст, а цвет хочешь поменять,
 то сделай это так*/
@@ -140,16 +221,6 @@ a.button10:active {
 	line-height: 20px;
 }
 
-h1,
-h3 {
-	text-align: center;
-}
-
-p:first-letter {
-	font-size: 25px;
-	color: brown;
-	font-family: Pompadur, 'Comic Sans MS', cursive;
-}
 
 form {
     overflow: hidden;
@@ -361,7 +432,7 @@ iframe{
 }
 
 .footer {
-	background-color: #009999;
+	background-color: #0F7391;
 	height: 200px;
 }
 
