@@ -162,7 +162,7 @@ form {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
-    background: rgba(60, 63, 65, 0.9); 
+    background: rgba(180, 200, 200, 0.9); 
     -webkit-background-clip: padding-box;
     -moz-background-clip: padding;
     background-clip: padding-box;
@@ -182,9 +182,9 @@ textarea, input{
     -webkit-background-clip: padding-box;
     -moz-background-clip: padding;
     background-clip: padding-box; 
-    color:#fff;
+    color: #000;
     font-weight: 300;
-    font-size:18px;
+    font-size: 18px;
     font-family: 'Open Sans', sans-serif;
 }
 /* поле текстового сообщения */
@@ -193,7 +193,7 @@ textarea{
     width: 93%;
     height: 110px;
     border: 1px solid rgba(255,255,255,.6);
-    background: rgba(255, 255, 255, 0.4); 
+    background: rgba(223, 240, 240, 0.4); 
 }
 /* формируем поля ввода */
 input {
@@ -217,20 +217,20 @@ input.message {
     padding-left: 25px;
 }
 ::-webkit-input-placeholder {
-    color: #fff;
+    color: grey;
 }
 :-moz-placeholder{ 
-    color: #fff; 
+    color: #eee; 
 }
 ::-moz-placeholder {
-    color: #fff;
+    color: #eee;
 }
 :-ms-input-placeholder {  
-    color: #fff; 
+    color: #eee; 
 }
 /* поля ввода при фокусе */
 input:focus, textarea:focus { 
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(200, 200, 200, 0.7);
     -moz-box-shadow: 0 0 5px 1px rgba(255,255,255,.5);
     -webkit-box-shadow: 0 0 5px 1px rgba(255,255,255,.5);
     box-shadow: 0 0 5px 1px rgba(255,255,255,.5);
