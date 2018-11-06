@@ -9,9 +9,15 @@ body {
 	padding: 0;
 }
 
+html,
+body {
+	height: 100%;
+}
+
 .container{
 	width: 1280px;
 	margin: 0 auto;
+	min-height: 100%;
 }
 
 .header {
@@ -431,9 +437,16 @@ iframe{
 	text-align: center;
 }
 
+.clrIndex {
+	height: 0px;
+}
+
 .footer {
+	margin: 0 auto;
+	width: 1280px;
 	background-color: #0F7391;
 	height: 200px;
+
 }
 
 .copy {
